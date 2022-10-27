@@ -1,5 +1,4 @@
-import React, { useState } from "react";
-import { useRouter } from "next/router";
+import React, { useContext } from "react";
 // External libraries
 import {
   AppBar,
@@ -15,15 +14,19 @@ import {
 } from "@mui/material";
 import { Menu, Work, Language } from "@mui/icons-material";
 import { useTranslation } from "next-i18next";
+// Data
+import { links } from "@/modules/portfolio/data";
 // Themes
 import { colors } from "@/styles/themes";
 // Hooks
 import { useNavbar } from "../hooks";
+import { UIContext } from "../context";
 
 export const Navbar = () => {
   //******** Hooks ********//
 
   const { menuActive, language, onNavigateTo, onChangeLanguage } = useNavbar();
+  const { setToggleSidebar } = useContext(UIContext);
   const { t } = useTranslation("common");
 
   //******** Renders ********/
@@ -33,14 +36,6 @@ export const Navbar = () => {
       <AppBar position="static">
         <Toolbar sx={{ display: "flex", justifyContent: "space-between" }}>
           <Box display="flex" alignItems="center" gap={1}>
-            <IconButton
-              sx={{ display: { xs: "flex", md: "none" } }}
-              size="medium"
-              edge="start"
-              color="info"
-            >
-              <Menu />
-            </IconButton>
             <Box
               sx={{
                 p: 1,
@@ -62,43 +57,29 @@ export const Navbar = () => {
               </Typography>
             </Box>
           </Box>
+          <IconButton
+            type="button"
+            sx={{ display: { xs: "flex", md: "none" } }}
+            size="medium"
+            edge="start"
+            color="info"
+            onClick={setToggleSidebar}
+          >
+            <Menu />
+          </IconButton>
           <Box sx={{ display: { xs: "none", md: "flex" } }} gap={2}>
-            <Button
-              sx={{ boxShadow: `0px 0px 5px 1px ${colors.primary}` }}
-              variant={menuActive === "" ? "contained" : "outlined"}
-              type="button"
-              color="info"
-              onClick={() => onNavigateTo("/")}
-            >
-              {t("menu_about")}
-            </Button>
-            <Button
-              sx={{ boxShadow: `0px 0px 5px 1px ${colors.primary}` }}
-              variant={menuActive === "projects" ? "contained" : "outlined"}
-              type="button"
-              color="info"
-              onClick={() => onNavigateTo("/projects")}
-            >
-              {t("menu_projects")}
-            </Button>
-            <Button
-              sx={{ boxShadow: `0px 0px 5px 1px ${colors.primary}` }}
-              variant={menuActive === "skills" ? "contained" : "outlined"}
-              type="button"
-              color="info"
-              onClick={() => onNavigateTo("/skills")}
-            >
-              {t("menu_skills")}
-            </Button>
-            <Button
-              sx={{ boxShadow: `0px 0px 5px 1px ${colors.primary}` }}
-              variant={menuActive === "contact" ? "contained" : "outlined"}
-              type="button"
-              color="info"
-              onClick={() => onNavigateTo("/contact")}
-            >
-              {t("menu_contact")}
-            </Button>
+            {links.map((link) => (
+              <Button
+                key={link.id}
+                sx={{ boxShadow: `0px 0px 5px 1px ${colors.primary}` }}
+                variant={menuActive === link.menu ? "contained" : "outlined"}
+                type="button"
+                color="info"
+                onClick={() => onNavigateTo(link.url)}
+              >
+                {t(link.translate)}
+              </Button>
+            ))}
             <FormControl size="small">
               <InputLabel>
                 <Language color="info" />

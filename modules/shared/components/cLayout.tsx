@@ -4,6 +4,7 @@ import Head from "next/head";
 import { Container } from "@mui/system";
 // Components
 import { Navbar } from "./cNavbar";
+import { Sidebar } from "./cSidebar";
 
 interface Props {
   children: ReactNode;
@@ -23,6 +24,7 @@ export const Layout: FC<Props> = ({ children, title, name, content }) => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Navbar />
+      <Sidebar />
       <main>{children}</main>
     </Container>
   );

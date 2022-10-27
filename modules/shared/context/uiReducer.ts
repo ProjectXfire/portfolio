@@ -2,6 +2,7 @@ import { UIState } from "./uiContext";
 
 type IAction =
   | { type: "selectedMenu"; payload: string }
+  | { type: "toggleSidebar" }
   | { type: "language"; payload: string };
 
 export const UIReducer = (state: UIState, action: IAction): UIState => {
@@ -11,6 +12,8 @@ export const UIReducer = (state: UIState, action: IAction): UIState => {
         ...state,
         menuActive: action.payload,
       };
+    case "toggleSidebar":
+      return { ...state, openSidebar: !state.openSidebar };
     case "language":
       return {
         ...state,

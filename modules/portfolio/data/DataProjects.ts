@@ -209,4 +209,14 @@ export const projects = [
     code: "https://github.com/ProjectXfire/udemy_journal",
     image: "/assets/images/project_22.jpg",
   },
+  {
+    id: 23,
+    name: "Basic React Apps",
+    tags: ["ALL", "REACT", "NEXTJS", "RESPONSIVE"],
+    description:
+      "This app content many simple proyects, like lists, modals, menus, sidebar, etc.",
+    demo: "https://basic-projects.vercel.app/",
+    code: "https://github.com/ProjectXfire/basic_projects",
+    image: "/assets/images/project_23.jpg",
+  },
 ];
