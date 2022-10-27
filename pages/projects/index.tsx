@@ -1,6 +1,7 @@
 import React from "react";
 import { GetServerSidePropsContext } from "next/types";
 // External libraries
+import { Box, Fade } from "@mui/material";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import { useTranslation } from "next-i18next";
 // Components
@@ -24,8 +25,12 @@ const ProjectsPage = () => {
 
   return (
     <Layout title="Projects" name="projects" content="my projects">
-      <TitleWithLine title={t("title_3")} />
-      <Projects />
+      <Fade in={true} timeout={500}>
+        <Box>
+          <TitleWithLine title={t("title_3")} />
+          <Projects />
+        </Box>
+      </Fade>
     </Layout>
   );
 };

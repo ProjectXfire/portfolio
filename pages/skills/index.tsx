@@ -1,7 +1,7 @@
 import React from "react";
 import { GetServerSidePropsContext } from "next/types";
 // External libraries
-import { Box } from "@mui/material";
+import { Box, Fade } from "@mui/material";
 import { useTranslation } from "next-i18next";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 // Components
@@ -25,12 +25,14 @@ const SkillsPage = () => {
 
   return (
     <Layout title="Skills" name="skills" content="my skills and cetificates">
-      <Box sx={{ mb: 4 }}>
-        <TitleWithLine title={t("title_4")} />
-        <Skills />
-        <TitleWithLine title={t("title_5")} />
-        <Certificates />
-      </Box>
+      <Fade in={true} timeout={500}>
+        <Box sx={{ mb: 4 }}>
+          <TitleWithLine title={t("title_4")} />
+          <Skills />
+          <TitleWithLine title={t("title_5")} />
+          <Certificates />
+        </Box>
+      </Fade>
     </Layout>
   );
 };
