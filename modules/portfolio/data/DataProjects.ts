@@ -219,4 +219,14 @@ export const projects = [
     code: "https://github.com/ProjectXfire/basic_projects",
     image: "/assets/images/project_23.jpg",
   },
+  {
+    id: 24,
+    name: "Advanced React Apps",
+    tags: ["ALL", "REACT", "NEXTJS", "RESPONSIVE"],
+    description:
+      "This app content some advanced proyects, like search, pagination, infinite scroll, etc.",
+    demo: "https://advanced-proyects.vercel.app/",
+    code: "https://github.com/ProjectXfire/advanced_proyects",
+    image: "/assets/images/project_24.jpg",
+  },
 ];

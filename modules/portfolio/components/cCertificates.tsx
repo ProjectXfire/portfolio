@@ -1,6 +1,6 @@
 import React from "react";
 // External libraries
-import { DataGrid, GridColDef } from "@mui/x-data-grid";
+import { DataGrid } from "@mui/x-data-grid";
 import { useTranslation } from "next-i18next";
 // Data
 import { certificates } from "@/modules/portfolio/data";
