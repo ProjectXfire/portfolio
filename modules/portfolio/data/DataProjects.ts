@@ -60,7 +60,7 @@ export const projects = [
     image: "/assets/images/project_6.jpg",
   },
   {
-    id: 8,
+    id: 7,
     name: "Job Search",
     tags: ["ALL", "REACT", "NEXTJS", "RESPONSIVE"],
     description:
@@ -70,7 +70,7 @@ export const projects = [
     image: "/assets/images/project_8.jpg",
   },
   {
-    id: 9,
+    id: 8,
     name: "Buttons Styles",
     tags: ["ALL", "REACT"],
     description:
@@ -80,7 +80,7 @@ export const projects = [
     image: "/assets/images/project_9.jpg",
   },
   {
-    id: 10,
+    id: 9,
     name: "Inputs Styles",
     tags: ["ALL", "REACT"],
     description:
@@ -90,7 +90,7 @@ export const projects = [
     image: "/assets/images/project_10.jpg",
   },
   {
-    id: 11,
+    id: 10,
     name: "Windbnb",
     tags: ["ALL", "REACT", "RESPONSIVE"],
     description:
@@ -100,7 +100,7 @@ export const projects = [
     image: "/assets/images/project_11.jpg",
   },
   {
-    id: 12,
+    id: 11,
     name: "todo",
     tags: ["ALL", "REACT"],
     description:
@@ -110,7 +110,7 @@ export const projects = [
     image: "/assets/images/project_12.jpg",
   },
   {
-    id: 13,
+    id: 12,
     name: "Quotes Generator",
     tags: ["ALL", "REACT", "RESPONSIVE"],
     description:
@@ -120,7 +120,7 @@ export const projects = [
     image: "/assets/images/project_13.jpg",
   },
   {
-    id: 14,
+    id: 13,
     name: "My Unsplash",
     tags: ["ALL", "NEXTJS", "REACT", "RESPONSIVE"],
     description:
@@ -130,7 +130,7 @@ export const projects = [
     image: "/assets/images/project_14.jpg",
   },
   {
-    id: 15,
+    id: 14,
     name: "WikiCat",
     tags: ["ALL", "NEXTJS", "REACT", "RESPONSIVE"],
     description:
@@ -140,7 +140,7 @@ export const projects = [
     image: "/assets/images/project_15.jpg",
   },
   {
-    id: 16,
+    id: 15,
     name: "Crypto App",
     tags: ["ALL", "REACT", "NEXTJS", "RESPONSIVE"],
     description:
@@ -150,7 +150,7 @@ export const projects = [
     image: "/assets/images/project_16.jpg",
   },
   {
-    id: 17,
+    id: 16,
     name: "Upload Images",
     tags: ["ALL", "REACT", "NEXTJS", "RESPONSIVE"],
     description:
@@ -160,7 +160,7 @@ export const projects = [
     image: "/assets/images/project_17.jpg",
   },
   {
-    id: 18,
+    id: 17,
     name: "E-commerce",
     tags: ["ALL", "ANGULAR", "RESPONSIVE"],
     description:
@@ -170,7 +170,7 @@ export const projects = [
     image: "/assets/images/project_18.jpg",
   },
   {
-    id: 19,
+    id: 18,
     name: "Login App",
     tags: ["ALL", "ANGULAR", "RESPONSIVE"],
     description:
@@ -180,7 +180,7 @@ export const projects = [
     image: "/assets/images/project_19.jpg",
   },
   {
-    id: 20,
+    id: 19,
     name: "Chat App",
     tags: ["ALL", "REACT", "NEXTJS", "RESPONSIVE"],
     description:
@@ -190,7 +190,7 @@ export const projects = [
     image: "/assets/images/project_20.jpg",
   },
   {
-    id: 21,
+    id: 20,
     name: "Thullo App",
     tags: ["ALL", "REACT", "NEXTJS", "RESPONSIVE"],
     description:
@@ -200,7 +200,7 @@ export const projects = [
     image: "/assets/images/project_21.jpg",
   },
   {
-    id: 22,
+    id: 21,
     name: "Journal App",
     tags: ["ALL", "REACT", "NEXTJS", "RESPONSIVE"],
     description:
@@ -210,7 +210,7 @@ export const projects = [
     image: "/assets/images/project_22.jpg",
   },
   {
-    id: 23,
+    id: 22,
     name: "Basic React Apps",
     tags: ["ALL", "REACT", "NEXTJS", "RESPONSIVE"],
     description:
@@ -220,7 +220,7 @@ export const projects = [
     image: "/assets/images/project_23.jpg",
   },
   {
-    id: 24,
+    id: 23,
     name: "Advanced React Apps",
     tags: ["ALL", "REACT", "NEXTJS", "RESPONSIVE"],
     description:
@@ -228,5 +228,15 @@ export const projects = [
     demo: "https://advanced-proyects.vercel.app/",
     code: "https://github.com/ProjectXfire/advanced_proyects",
     image: "/assets/images/project_24.jpg",
+  },
+  {
+    id: 24,
+    name: "My Journal",
+    tags: ["ALL", "REACT", "NEXTJS", "RESPONSIVE"],
+    description:
+      "This app is a simple journal, you can writes notes and add images if you prefer.",
+    demo: "https://my-journal-rnp5.vercel.app/login",
+    code: "https://github.com/ProjectXfire/my_journal",
+    image: "/assets/images/project_25.jpg",
   },
 ];
